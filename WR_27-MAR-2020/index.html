@@ -14,91 +14,10 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<link rel="stylesheet" href="css/setup.css">
+
+
 <style>
-.mySlides {display:none;}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-
-body, html {
-
-  height: 100%;
-
-  color: #777;
-
-  line-height: 1.8;
-
-  scroll-behavior: smooth;
-
-
-
-}
-
-span {
-
-  white-space: pre;
-
-}
-
-
-
-/* Create a Parallax Effect */
-
-.bgimg-1, .bgimg-2, .bgimg-3 {
-
-  background-attachment: fixed;
-
-  background-position: center;
-
-  background-repeat: no-repeat;
-
-  background-size: cover;
-
-}
-
-
-
-/* First image (Logo. Full height) */
-
-.bgimg-1 {
-
-  background-image: url('w3images/parallaxq1.jpg');
-
-  min-height: 100%;
-
-}
-
-
-
-/* Second image (Portfolio) */
-
-.bgimg-2 {
-
-  background-image: url("w3images/parallaxq2.jpg");
-
-  min-height: 400px;
-
-}
-
-
-
-/* Third image (Contact) */
-
-.bgimg-3 {
-
-  background-image: url("w3images/parallaxq4.jpg");
-
-  min-height: 400px;
-
-}
-
-
-
-.w3-wide {letter-spacing: 10px;}
-
-.w3-hover-opacity {cursor: pointer;}
-
-
 
 /* Turn off parallax scrolling for tablets and phones */
 
@@ -204,7 +123,7 @@ span {
 		<img class="mySlides w3-animate-right" src="w3images/slider3.jpg" style="width:100%">
 		<img class="mySlides w3-animate-right" src="w3images/slider4.jpg" style="width:100%">
 
-<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle w3-hide-small" style="width:100%">
     <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
     <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
@@ -522,111 +441,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 </footer>
 
- 
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-   plusDivs(1);
-  
-  setTimeout(carousel, 2500);    
-}
-
-// Modal Image Gallery
-
-function onClick(element) {
-
-  document.getElementById("img01").src = element.src;
-
-  document.getElementById("modal01").style.display = "block";
-
-  var captionText = document.getElementById("caption");
-
-  captionText.innerHTML = element.alt;
-
-}
-
-
-
-// Change style of navbar on scroll
-
-window.onscroll = function() {myFunction()};
-
-function myFunction() {
-
-    var navbar = document.getElementById("myNavbar");
-
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-
-    } else {
-
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-
-    }
-
-}
-
-
-
-// Used to toggle the menu on small screens when clicking on the menu button
-
-function toggleFunction() {
-
-    var x = document.getElementById("navDemo");
-
-    if (x.className.indexOf("w3-show") == -1) {
-
-        x.className += " w3-show";
-
-    } else {
-
-        x.className = x.className.replace(" w3-show", "");
-
-    }
-
-}
-
-</script>
-
-
+<script type="text/javascript" src="js/setup.js"></script>
 
 </body>
 
