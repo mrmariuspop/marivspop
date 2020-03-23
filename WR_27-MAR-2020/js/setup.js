@@ -1,5 +1,7 @@
-var slideIndex = 1;
+var slideIndex = 0;
 showDivs(slideIndex);
+
+var image1src = "w3images/pq2.jpg";
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
@@ -45,7 +47,49 @@ function carousel() {
 
 function onClick(element) {
 
-  document.getElementById("img01").src = element.src;
+  var initialImageSrc = element.src;
+  //display the high resolution image when clicked , NOT the preview as displayed on the main page (..._big extensions)
+  if (initialImageSrc.includes("pq1"))
+  {	  
+	  document.getElementById("img01").src = element.src.replace("pq1","pq1");
+
+  }
+  if (initialImageSrc.includes("pq2"))
+  {	  
+	  document.getElementById("img01").src = element.src.replace("pq2","pq2");
+
+  }
+  if (initialImageSrc.includes("pq3"))
+  {	  
+	  document.getElementById("img01").src = element.src.replace("pq3","pq3");
+
+  }
+  if (initialImageSrc.includes("pq4"))
+  {	  
+	  document.getElementById("img01").src = element.src.replace("pq4","pq4");
+
+  }
+  if (initialImageSrc.includes("pq5"))
+  {	  
+	  document.getElementById("img01").src = element.src.replace("pq5","pq5_big");
+
+  }
+  if (initialImageSrc.includes("pq6"))
+  {	  
+	  document.getElementById("img01").src = element.src.replace("pq6","pq6_big");
+
+  }
+  if (initialImageSrc.includes("pq7"))
+  {	  
+	  document.getElementById("img01").src = element.src.replace("pq7","pq7_big");
+
+  }
+  if (initialImageSrc.includes("pq8"))
+  {	  
+	  document.getElementById("img01").src = element.src.replace("pq8","pq8_big");
+
+  }
+  
 
   document.getElementById("modal01").style.display = "block";
 
