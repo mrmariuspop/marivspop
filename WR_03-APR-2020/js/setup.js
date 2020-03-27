@@ -49,44 +49,44 @@ function onClick(element) {
 
   var initialImageSrc = element.src;
   //display the high resolution image when clicked , NOT the preview as displayed on the main page (..._big extensions)
-  if (initialImageSrc.includes("pq1"))
+  if (initialImageSrc.includes("JUO01n5"))
   {	  
-	  document.getElementById("img01").src = element.src.replace("pq1","pq1");
+	  document.getElementById("img01").src = element.src.replace("JUO01n5","JUO01n5");
 
   }
-  if (initialImageSrc.includes("pq2"))
+  if (initialImageSrc.includes("https://i.imgur.com/vueWSHj.jpg"))
   {	  
-	  document.getElementById("img01").src = element.src.replace("pq2","pq2");
+	  document.getElementById("img01").src = element.src.replace("https://i.imgur.com/vueWSHj.jpg","https://i.imgur.com/vueWSHj.jpg");
 
   }
-  if (initialImageSrc.includes("pq3"))
+  if (initialImageSrc.includes("https://i.imgur.com/JEMWPvm.jpg"))
   {	  
-	  document.getElementById("img01").src = element.src.replace("pq3","pq3");
+	  document.getElementById("img01").src = element.src.replace("https://i.imgur.com/JEMWPvm.jpg","https://i.imgur.com/JEMWPvm.jpg");
 
   }
-  if (initialImageSrc.includes("pq4"))
+  if (initialImageSrc.includes("https://i.imgur.com/AySarWs.jpg"))
   {	  
-	  document.getElementById("img01").src = element.src.replace("pq4","pq4");
+	  document.getElementById("img01").src = element.src.replace("https://i.imgur.com/AySarWs.jpg","https://i.imgur.com/AySarWs.jpg");
 
   }
-  if (initialImageSrc.includes("pq5"))
+  if (initialImageSrc.includes("https://i.imgur.com/nYoh2Ug.jpg"))
   {	  
-	  document.getElementById("img01").src = element.src.replace("pq5","pq5_big");
+	  document.getElementById("img01").src = element.src.replace("https://i.imgur.com/nYoh2Ug.jpg","https://i.imgur.com/mCXEdwD.jpg");
 
   }
-  if (initialImageSrc.includes("pq6"))
+  if (initialImageSrc.includes("https://i.imgur.com/SvPIlS2.jpg"))
   {	  
-	  document.getElementById("img01").src = element.src.replace("pq6","pq6_big");
+	  document.getElementById("img01").src = element.src.replace("https://i.imgur.com/SvPIlS2.jpg","https://i.imgur.com/sy6tb25.jpg");
 
   }
-  if (initialImageSrc.includes("pq7"))
+  if (initialImageSrc.includes("https://i.imgur.com/Jzc2z4l.jpg"))
   {	  
-	  document.getElementById("img01").src = element.src.replace("pq7","pq7_big");
+	  document.getElementById("img01").src = element.src.replace("https://i.imgur.com/Jzc2z4l.jpg","https://i.imgur.com/QV3gwmi.jpg");
 
   }
-  if (initialImageSrc.includes("pq8"))
+  if (initialImageSrc.includes("https://i.imgur.com/VdwkQss.jpg"))
   {	  
-	  document.getElementById("img01").src = element.src.replace("pq8","pq8_big");
+	  document.getElementById("img01").src = element.src.replace("https://i.imgur.com/VdwkQss.jpg","https://i.imgur.com/tqfRgWE.jpg");
 
   }
   
