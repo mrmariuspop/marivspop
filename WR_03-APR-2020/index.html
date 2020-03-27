@@ -390,7 +390,7 @@
 
       <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
 
-      <form action="https://formspree.io/xdodjbev" method="POST" target="_blank">
+      <form name="myForm" action="https://formspree.io/xdodjbev" method="POST" target="_blank" onSubmit="return validateForm()">
 
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
 
@@ -402,7 +402,7 @@
 
           <div class="w3-half">
 
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email" onClick="clicked()">
 
           </div>
 

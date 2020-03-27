@@ -140,3 +140,43 @@ function toggleFunction() {
     }
 
 }
+
+function validateForm() {
+	console.log("S-a apelat functia");
+  var x = document.forms["myForm"]["Email"].value;
+  console.log(x);
+  if (!x.includes('@')) {
+	  console.log("Am intrat in if");
+    document.forms["myForm"]["Email"].value = 'Invalid Email';
+    document.forms["myForm"]["Email"].style.color = "Red";
+    return false;
+  }
+}
+
+function clicked() {
+	console.log("Am apelat clicked");
+	var x = document.forms["myForm"]["Email"].value;
+	if (x.includes('Invalid')) {
+		console.log('Contine invalid');
+		document.forms["myForm"]["Email"].value = '';
+		document.forms["myForm"]["Email"].style.color = "black";
+	} else {
+		console.log('Nu contine invalid');
+		
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
