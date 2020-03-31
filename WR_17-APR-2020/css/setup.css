@@ -1,275 +1,549 @@
 .mySlides {display:none;}
+
 .yourSlides {display:none;}
+
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
+
 .w3-badge {height:13px;width:13px;padding:0}
+
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 
+
+
 .force-black{
+
 	color:black;
+
 }
+
+
 
 .force-black:hover{
+
 	background-color:red;
+
 }
+
 span i {
+
 	background-color: black;
+
     animation-name: example;
+
     animation-duration: 1s;
+
     animation-iteration-count: infinite;
+
     animation-direction: alternate;  
 
+
+
 }
+
+
 
 @keyframes example {
+
   from {background-color: black ;}
+
   to {background-color: black ;}
 
+
+
 }
+
+
+
 
 
 body, html {
 
+
+
   height: 100%;
+
+
 
   color: #777;
 
+
+
   line-height: 1.8;
+
+
 
   scroll-behavior: smooth;
 
+
+
 }
+
+
 
 span {
 
+
+
   white-space: pre;
 
+
+
 }
+
+
 
 /* Create a Parallax Effect */
 
+
+
 .bgimg-1, .bgimg-2, .bgimg-3 {
+
+
 
   background-attachment: fixed;
 
+
+
   background-position: center;
+
+
 
   background-repeat: no-repeat;
 
+
+
   background-size: cover;
 
+
+
 }
+
+
+
 
 
 .w3-wide {letter-spacing: 10px;}
 
+
+
 .w3-hover-opacity {cursor: pointer;}
+
+
 
 /* First image (Logo. Full height) */
 
+
+
 .bgimg-1 {
+
+
 
   background-image: url('https://i.imgur.com/xjtFbV6.jpg');
 
+
+
   min-height: 100%;
 
+
+
 }
+
+
+
+
 
 
 
 /* Second image (Portfolio) */
 
+
+
 .bgimg-2 {
 
-  background-image: url("https://i.imgur.com/yylayK3.jpg");
+
+
+  background-image: url("https://i.imgur.com/IiQh0me.jpg");
+
+
 
   min-height: 400px;
 
+
+
 }
+
+
+
+
 
 
 
 /* Third image (Contact) */
 
+
+
 .bgimg-3 {
+
+
 
   background-image: url("https://i.imgur.com/6Age9dR.jpg");
 
+
+
   min-height: 400px;
 
+
+
 }
+
+
 
 .css-typing p {
+
   border-right: .15em solid black;
+
   font-family: "Courier";
+
   color: black;	
+
   font-size: 25px;
+
   font-weight: bold;
+
   background-color:white;
+
   white-space: nowrap;
+
   overflow: hidden;
+
 }
+
 .css-typing p:nth-child(1) {
+
   width: 0.0em;
+
   -webkit-animation: type 2s steps(80, end);
+
   animation: type 2s steps(80, end);
+
   -webkit-animation-fill-mode: forwards;
+
   animation-fill-mode: forwards;
+
 }
+
+
 
 .css-typing p:nth-child(2) {
+
   width: 11.5em;
+
   opacity: 0;
+
   -webkit-animation: type2 0.5s steps(40, end);
+
   animation: type2 0.3s steps(40, end);
+
   -webkit-animation-delay: 0.5s;
+
   animation-delay: 0.2s;
+
   -webkit-animation-fill-mode: forwards;
+
   animation-fill-mode: forwards;
+
 }
+
+
 
 .css-typing p:nth-child(3) {
+
   width: 7.3em;
+
   opacity: 0;
+
   -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+
   animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+
   -webkit-animation-delay: 4s;
+
   animation-delay: 4s;
+
   -webkit-animation-fill-mode: forwards;
+
   animation-fill-mode: forwards;
+
 }
+
+
 
 @keyframes type {
+
   0% {
+
     width: 0;
+
   }
+
   99.9% {
+
     border-right: .15em solid black;
+
   }
+
   100% {
+
     border: none;
+
   }
+
 }
+
+
 
 @-webkit-keyframes type {
+
   0% {
+
     width: 0;
+
   }
+
   99.9% {
+
     border-right: .15em solid black;
+
   }
+
   100% {
+
     border: none;
+
   }
+
 }
+
+
 
 @keyframes type2 {
+
   0% {
+
     width: 0;
+
   }
+
   1% {
+
     opacity: 1;
+
   }
+
   99.9% {
+
     border-right: .15em solid black;
+
   }
+
   100% {
+
     opacity: 1;
+
     border: none;
+
   }
+
 }
+
+
 
 @-webkit-keyframes type2 {
+
   0% {
+
     width: 0;
+
   }
+
   1% {
+
     opacity: 1;
+
   }
+
   99.9% {
+
     border-right: .15em solid black;
+
   }
+
   100% {
+
     opacity: 1;
+
     border: none;
+
   }
+
 }
+
+
 
 @keyframes type3 {
+
   0% {
+
     width: 0;
+
   }
+
   1% {
+
     opacity: 1;
+
   }
+
   100% {
+
     opacity: 1;
+
   }
+
 }
+
+
 
 @-webkit-keyframes type3 {
+
   0% {
+
     width: 0;
+
   }
+
   1% {
+
     opacity: 1;
+
   }
+
   100% {
+
     opacity: 1;
+
   }
+
 }
 
+
+
 @keyframes blink {
+
   50% {
+
     border-color: transparent;
+
   }
+
 }
+
 @-webkit-keyframes blink {
+
   50% {
+
     border-color: tranparent;
+
   }
+
 }
+
+
 
 .p-class {
 
+
+
   text-transform: uppercase;
+
   letter-spacing: .5em;
+
   display: inline-block;
+
   border: 4px double rgba(255, 255, 255, 0.25);
+
   border-width: 4px 0;
+
   padding: 1.5em 0em;
+
   position: absolute;
+
   top: 18%;
+
   left: 50%;
+
   width: 40em;
+
   margin: 0 0 0 -20em;
-}
-.p-span-class {
-		  text-align: left;
-  margin: 0;
-  font: 700 4em/1 "Oswald", sans-serif;
-  letter-spacing: 0;
-  padding: .25em 0 .325em;
-  display: block;
-  margin: 0 auto;
-  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
-  /* Clip Background Image */
-  background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
-  -webkit-background-clip: text;
-  background-clip: text;
-  /* Animate Background Image */
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: aitf 80s linear infinite;
-  /* Activate hardware acceleration for smoother animations */
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
+
 }
 
+.p-span-class {
+
+		  text-align: left;
+
+  margin: 0;
+
+  font: 700 4em/1 "Oswald", sans-serif;
+
+  letter-spacing: 0;
+
+  padding: .25em 0 .325em;
+
+  display: block;
+
+  margin: 0 auto;
+
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+
+  /* Clip Background Image */
+
+  background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
+
+  -webkit-background-clip: text;
+
+  background-clip: text;
+
+  /* Animate Background Image */
+
+  -webkit-text-fill-color: transparent;
+
+  -webkit-animation: aitf 80s linear infinite;
+
+  /* Activate hardware acceleration for smoother animations */
+
+  -webkit-transform: translate3d(0, 0, 0);
+
+  -webkit-backface-visibility: hidden;
+
+}
+
+
+
 /* Animate Background Image */
+
 @-webkit-keyframes aitf {
+
   0% {
+
     background-position: 0% 50%;
+
   }
+
   100% {
+
     background-position: 100% 50%;
+
   }
+
 }
