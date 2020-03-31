@@ -118,10 +118,6 @@ span {
 
 }
 
-
-
-
-
 .w3-wide {letter-spacing: 10px;}
 
 
@@ -132,7 +128,11 @@ span {
 
 /* First image (Logo. Full height) */
 
+.logo {
+  width: 100%;
+  height: auto;
 
+}
 
 .bgimg-1 {
 
@@ -147,10 +147,6 @@ span {
 
 
 }
-
-
-
-
 
 
 
