@@ -80,15 +80,6 @@ body, html {
 
 
 
-span {
-
-
-
-  white-space: pre;
-
-
-
-}
 
 
 
@@ -134,11 +125,16 @@ span {
 
 }
 
+.sub-logo {
+  width: 50%;
+  height: auto;
+
+}
 .bgimg-1 {
 
 
 
-  background-image: url('https://i.imgur.com/xjtFbV6.jpg');
+  background-image: url('https://i.imgur.com/9CeE4W9.jpg');
 
 
 
@@ -182,7 +178,7 @@ span {
 
 
 
-  background-image: url("https://i.imgur.com/6Age9dR.jpg");
+  background-image: url("https://i.imgur.com/xjtFbV6.jpg");
 
 
 
@@ -272,7 +268,11 @@ span {
 
 }
 
-
+.centered-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 @keyframes type {
 
