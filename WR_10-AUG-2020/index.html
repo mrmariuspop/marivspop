@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Marius Pop Fitness Model</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="css/setup.css?v=5.3.3">
+
+
+<style>
+
+/* Turn off parallax scrolling for tablets and phones */
+/* @media only screen and (max-device-width: 1500px) { */
+
+@media only screen and (max-device-width: 1000px) {
+
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+
+    background-attachment: scroll;
+
+    min-height: 400px;
+
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+         width: 500px;
+		 height: auto;
+    }
+	
+	.sub-logo {
+         width: 100%;
+		 height: auto;
+    }
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+<!-- Navbar (sit on top) -->
+
+<div class="w3-top">
+
+  <div class="w3-bar" id="myNavbar">
+
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+
+      <i class="fa fa-bars"></i>
+
+    </a>
+
+    <a href="#home" class="w3-bar-item w3-button force-black">HOME</a>
+
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small force-black"><i class="fa fa-user"></i> ABOUT</a>
+
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small force-black"><i class="fa fa-th"></i> PORTFOLIO</a>
+
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small force-black"><i class="fa fa-envelope"></i> CONTACT</a>
+
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+
+      <i class="fa fa-search"></i>
+
+    </a>
+
+  </div>
+
+
+
+  <!-- Navbar on small screens -->
+
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+
+  </div>
+
+</div>
+
+
+
+<!-- First Parallax Image with Logo Text -->
+
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+
+  <div class="w3-display-middle" style="white-space:nowrap;">
+
+    <span class="w3-center w3-xlarge w3-wide w3-animate-opacity css-typing" width="max"><img class="logo" src="logo/yellow-neon-light.png"></img></span>
+
+  </div>
+
+</div>
+
+
+
+<!-- Container (About Section) -->
+
+<div class="w3-content w3-container w3-padding-64" id="about">
+
+  <h3 class="w3-center">ABOUT ME</h3>
+  
+  <div class="w3-center"><img class="sub-logo" src="logo/2.png"></img></div>
+  
+  <p class="w3-center"><em><font color="red">Site under CONSTRUCTION!!! Photo shooting coming SOON. Thank you!</font></em></p>
+
+  <p>Hello there! My name is Marius Pop. I am from Alba Iulia but I'm living in Cluj-Napoca for 5 years. I work as a Java Software Developer for The Bank of Transilvania and as an Asisstant Professor in the CS department of Technical University of Cluj-Napoca. I love fitness and bodybuilding and moreover to inspire and motivate people.</p>
+
+  <div class="w3-row w3-center">
+
+    <!--<div class="w3-col m6 w3-center w3-padding-large w3-content w3-display-container">-->
+
+      <p><b><i class="fa fa-user w3-margin-right"></i>Marius Pop</b></p><br>
+
+		<div id="over" style="width:100%; height:100%">
+		  <img class="mySlides w3-animate-right over" src="https://i.imgur.com/IlseQw8.jpg" style="width:50%">
+		<img class="mySlides w3-animate-right over" src="https://i.imgur.com/AIUCd3O.jpg" style="width:50%">
+		<img class="mySlides w3-animate-right over" src="https://i.imgur.com/BsyIOBW.jpg" style="width:50%">
+		<img class="mySlides w3-animate-right over" src="https://i.imgur.com/luViCS0.jpg" style="width:50%">
+		</div>
+		
+
+
+		<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle w3-hide" style="width:100%">
+			<div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+			<div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+			<span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(1)"></span>
+			<span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(2)"></span>
+			<span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(3)"></span>
+			<span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(4)"></span>
+
+		</div>
+		
+		<!--//<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		//<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
+   </div>
+
+
+
+    <!-- Hide this text on small devices -->
+
+    <div class="w3-row m6 w3-padding-large w3-center">
+      <p class="w3-text-white"><b><i class="fa fa-user w3-margin-right"></i>Marius Pop</b></p><br>
+
+		<video width="50%" height="50%" controls loop autoplay muted>
+			<source src="w3videos/hall.mp4" type="video/mp4">
+		</video>
+	  
+	 
+
+    </div>
+
+  </div>
+
+  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Software Development</p>
+
+  <div class="w3-light-grey">
+
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+
+  </div>
+
+  <p class="w3-wide"><i class="fa fa-bicycle"></i>Fitness</p>
+
+  <div class="w3-light-grey">
+
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+
+  </div>
+
+  <p class="w3-wide"><i class="fa fa-play"></i>Table Tennis</p>
+
+  <div class="w3-light-grey">
+
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+
+  </div>
+
+</div>
+
+
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+
+  <div class="w3-quarter w3-section">
+
+    <span class="w3-xlarge">14+</span><br>
+
+    Partners
+
+  </div>
+
+  <div class="w3-quarter w3-section">
+
+    <span class="w3-xlarge">55+</span><br>
+
+    Projects Done
+
+  </div>
+
+  <div class="w3-quarter w3-section">
+
+    <span class="w3-xlarge">89+</span><br>
+
+    Happy Clients
+
+  </div>
+
+  <div class="w3-quarter w3-section">
+
+    <span class="w3-xlarge">150+</span><br>
+
+    Meetings
+
+  </div>
+
+</div>
+
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+
+  <div class="w3-display-middle">
+
+    <span class="w3-xxlarge w3-text-white w3-wide w3-black">PORTFOLIO</span>
+
+  </div>
+
+</div>
+
+
+
+<!-- Container (Portfolio Section) -->
+
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+
+  <h3 class="w3-center">MY WORK</h3>
+
+  <p class="w3-center"><em>Here are some of my latest photos.<br> Click on the images to make them bigger</em></p><br>
+
+
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+
+  <div class="w3-row-padding w3-center">
+
+    <div class="w3-col m3">
+
+      <img src="https://i.imgur.com/ZabvPqp.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Rnd txt img1">
+
+    </div>
+
+
+
+    <div class="w3-col m3">
+
+      <img src="https://i.imgur.com/0K8abmK.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Rnd txt img2">
+
+    </div>
+
+
+
+    <div class="w3-col m3">
+
+      <img src="https://i.imgur.com/UWc0BPJ.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Rnd txt img3">
+
+    </div>
+
+
+
+    <div class="w3-col m3">
+
+      <img src="https://i.imgur.com/lKoUZZ7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Rnd txt img4">
+
+    </div>
+
+  </div>
+
+
+
+  <div class="w3-row-padding w3-center w3-section">
+
+    <div class="w3-col m3">
+
+      <img src="https://i.imgur.com/c6gvGqz.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Rnd txt img5">
+
+    </div>
+
+
+
+    <div class="w3-col m3">
+
+      <img src="https://i.imgur.com/RRVKZB9.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Rnd txt img6">
+
+    </div>
+
+
+
+    <div class="w3-col m3">
+
+      <img src="https://i.imgur.com/c6gvGqz.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Rnd txt img7">
+
+    </div>
+
+
+
+    <div class="w3-col m3">
+
+      <img src="https://i.imgur.com/w3TKqop.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Rnd txt img8">
+
+    </div>
+
+    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+
+  </div>
+
+</div>
+
+
+
+<!-- Modal for full size images on click-->
+
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+
+    <img id="img01" class="w3-image">
+
+    <p id="caption" class="w3-opacity w3-large"></p>
+
+  </div>
+
+</div>
+
+
+
+<!-- Third Parallax Image with Portfolio Text -->
+
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+
+  <div class="w3-display-middle">
+
+     <span class="w3-xxlarge w3-text-white w3-wide w3-black">CONTACT</span>
+
+  </div>
+
+</div>
+
+
+
+<!-- Container (Contact Section) -->
+
+<div class="w3-content w3-container w3-padding-64" id="contact">
+
+  <h3 class="w3-center">WHERE I WORK</h3>
+
+  <p class="w3-center"><em>Keep in touch for updates, we're gonna ROCK IT!</em></p>
+
+
+
+  <div class="w3-row w3-padding-32 w3-section">
+
+    <div class="w3-col m4 w3-container">
+
+      <img src="https://i.imgur.com/ugMtZa8.jpg" class="w3-image w3-round" style="width:100%">
+
+    </div>
+
+    <div class="w3-col m8 w3-panel">
+
+      <div class="w3-large w3-margin-bottom">
+
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Cluj-Napoca, RO<br>
+
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +40-7494500XX<br>
+
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: contact@marivspop.ro<br>
+
+      </div>
+
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+
+      <form name="myForm" action="https://formspree.io/xdodjbev" method="POST" target="_blank" onSubmit="return validateForm()">
+
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+
+          <div class="w3-half">
+
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+
+          </div>
+
+          <div class="w3-half">
+
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email" onClick="clicked()">
+
+          </div>
+
+        </div>
+
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- Footer -->
+
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+  <div class="w3-xlarge w3-section">
+
+    <a href="https://www.facebook.com/iammarivspop"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+
+    <a href="https://www.instagram.com/marivspop"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+
+    <a href="https://www.linkedin.com/in/marivspop"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+
+  </div>
+
+  <p>Powered by <a href="https://marivspop.ro" title="@marivspop" target="_blank" class="w3-hover-text-green">@marivspop</a></p>
+
+</footer>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/setup.js?v=5.3.3"></script>
+
+</body>
+
+</html>
